@@ -1,7 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
-    
+    background-color: #0B1D26;
     font-family: 'Poppins', sans-serif;
 }
 :root{
@@ -17,6 +17,11 @@ a{
 }
 .wrapper{
     max-inline-size: 1500px;
+    padding-inline: 80px;
+    margin-inline: auto;
+}
+.wrapper-main{
+    max-inline-size: 1100px;
     padding-inline: 80px;
     margin-inline: auto;
 }
@@ -58,6 +63,14 @@ header .header--title-container h1{
  display: block;
  margin: 20px;
 }
+.scroll-container{
+    display: relative;
+}
+.scroll-container ul{
+    top: 20px;
+    position: sticky;
+    border: 1px solid red;
+}
 .scroll-container ul li{
     block-size: 60px;
     list-style: none;
@@ -70,4 +83,94 @@ header .header--title-container h1{
 .scroll-container ul li:nth-child(1){
 
     border-inline-end: 3px solid var(--BG);
+}
+main {
+   
+    color: var(--white);
+    margin: 0;
+   
+}
+.wrapper-container{
+    top: -500px;
+    position: relative;
+}
+
+.section-container {
+    counter-increment: secciones;
+    margin-block: 200px;
+    display: flex;
+    height: 550px;
+}
+.reverse-flex{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.section-container .section-text--container{
+    padding-block: 50px;
+    margin-inline: 100px;
+    position: relative;
+}
+.section-container .section-text--container::before{
+    content: '';
+    background-color: var(--accent);
+    height: 2px;
+    width: 72px;
+    display: inline-block;
+}
+.section-text--container a{
+    
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.number::before{
+    content: '0'counter(secciones);
+    position: absolute;
+    font-size: 20rem;
+    color: rgba(255, 255, 255, 0.158);
+    font-weight: bolder;
+    z-index: 0;
+    top: -90px;
+    left: -80px;
+    
+}
+.section-text--container a::after{
+    content: '';
+    height: 16px;
+    width: 24px;
+    margin-left: 5px;
+    background-image: url('../Resources/iconos/arrow.png');
+    background-position: center;
+    display: inline-block;
+    right: 1px;
+}
+
+.section-container p{
+    font-size: 1.8rem;
+    margin-block: 28px;
+}
+.section-container h2{
+    margin-block: 28px;
+    font-size: 6.4rem;
+}
+
+@media (max-width: 1024px) {
+    header .header--title-container h1{
+        font-size:5rem;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 1224px) {
+    header .header--title-container h1{
+        font-size:5rem;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 1324px) {
+    header .header--title-container h1{
+        font-size:5rem;
+        line-height: 60px;
+    }
 }
