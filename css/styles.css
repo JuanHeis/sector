@@ -45,7 +45,7 @@ header{
     background-image: linear-gradient(to top, #0B1D26 10%, transparent 40%), url('../Resources/img/background.png');
     background-size: cover;
     background-position: right;
-    height: 200vh;
+    height: 190vh;
 }
 header .header--title-container{
     display: flex;
@@ -91,7 +91,7 @@ main {
    
 }
 .wrapper-container{
-    top: -500px;
+
     position: relative;
 }
 
