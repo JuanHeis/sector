@@ -16,12 +16,12 @@ a{
     text-decoration: none;
 }
 .wrapper{
-    max-inline-size: 1500px;
+    max-inline-size: 1760px;
     padding-inline: 80px;
     margin-inline: auto;
 }
 .wrapper-main{
-    max-inline-size: 1100px;
+    max-inline-size: 1462px;
     padding-inline: 80px;
     margin-inline: auto;
 }
@@ -68,8 +68,6 @@ header .header--title-container h1{
 }
 .scroll-container ul{
     top: 20px;
-    position: sticky;
-    border: 1px solid red;
 }
 .scroll-container ul li{
     block-size: 60px;
@@ -153,7 +151,38 @@ main {
     margin-block: 28px;
     font-size: 6.4rem;
 }
+.footer--rigth-section div{
+margin-inline-start: 158px;
+}
+.footer--left-section span{
+    display: block;
+    margin-block: 24px;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+.footer--rigth-section ul{
+    padding: 0;
+}
+.footer--rigth-section div ul li{
+    list-style: none;
 
+}
+footer h4{
+    font-size: 2.4rem;
+    color: var(--accent);
+
+}
+footer ul{
+    color: var(--white);
+    font-size: 1.8rem;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer--rigth-section{
+    display: flex;
+}
 @media (max-width: 1024px) {
     header .header--title-container h1{
         font-size:5rem;
